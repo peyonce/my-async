@@ -1,21 +1,37 @@
 {
   "name": "my-async",
   "version": "1.0.0",
-  "description": "my project we collecting data for weather",
-  "main": "index.js",
+  "description": "A Node.js + TypeScript project for collecting weather and news data using callbacks, promises, and async/await.",
+  "main": "dist/index.js",
+  "type": "commonjs",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "callback": "ts-node src/callbackVersion.ts",
+    "promise": "ts-node src/promiseVersion.ts",
+    "async": "ts-node src/asyncAwaitVersion.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/peyonce/my-async.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "weather",
+    "news",
+    "async",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Your Name",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/peyonce/my-async/issues"
   },
-  "homepage": "https://github.com/peyonce/my-async#readme"
+  "homepage": "https://github.com/peyonce/my-async#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
 }
